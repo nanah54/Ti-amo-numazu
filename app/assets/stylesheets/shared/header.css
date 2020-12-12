@@ -7,8 +7,9 @@
   padding: 1vh 0;
 }
 
-.lists-left {
+.lists-right {
   display: flex;
+  justify-content: space-around;
   min-width: 200px;
 
 }
