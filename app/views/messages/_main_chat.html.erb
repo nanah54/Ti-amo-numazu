@@ -1,10 +1,14 @@
 <div class="chat-header">
   <div class="left-header">
     <div class="header-title">
-      食事
+      <%= @room.name %>
     </div>
   </div>
 
+</div>
+
+<div class="messages">
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
@@ -17,4 +21,3 @@
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
-
